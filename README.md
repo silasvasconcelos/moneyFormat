@@ -10,4 +10,4 @@ alert(moneyFormat(999999999,'.',',',2)); // 9.999.999,99
 alert(moneyFormat(999999999,',','.',3)); // 999.999,999
 
 # Em input
-&lt;input type="text" onkeyup="moneyFormat(this);" placeholder="00,00"&gt;
+&lt;input type="text" onkeyup="moneyFormat(this.value);" placeholder="00,00"&gt;
