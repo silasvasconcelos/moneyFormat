@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Money Format JS</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <br><br>
+            <p><a href="http://silasvasconcelos.com.br" target="_blank" class="btn btn-success">Dev: Silas Vasconcelos</a></p>
+        </div>
+        <div class="row">
+            <h2>Money Format</h2>
+            Formata moeda sem limit de numeros!<br>
+            de 1000 => 1.000 ou 100000000000000 => 1.000.000.000.000,00<br>
+            segundo os exeplos abaixo podese passar as formatações<br>
+            <h2>Exemplo de uso</h2>
+            <p>
+                <code>
+                &lt;script type="text/javascritp"&gt; alert( moneyFormat(999999999) ); // 9.999.999,99 &lt;/script&gt;
+                </code>
+            </p>
+            <p>
+                <code>
+                &lt;script type="text/javascritp"&gt; alert(moneyFormat(999999999,'.',',',2)); // 9.999.999,99 &lt;/script&gt; <br>
+                </code>
+            </p>
+            <p>
+                <code>
+                    &lt;script type="text/javascritp"&gt; alert(moneyFormat(999999999,',','.',3)); // 999.999,999 &lt;/script&gt;
+                </code>
+            </p>
+        </div>
+        <div class="row">
+            <h2>Em input</h2>
+            <p><input type="text" onkeyup="this.value = moneyFormat(this.value);" placeholder="00,00"></p>
+            <p>
+                <code>
+                    &lt;input type="text" onkeyup="this.value = moneyFormat(this.value);" placeholder="00,00" /&gt;
+                </code>
+            </p>
+        </div>
+    </div>
+</body>
+<script text="text/javascript" src="moneyFormat.js"></script>
+</html>
